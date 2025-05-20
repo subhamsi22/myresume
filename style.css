@@ -877,17 +877,926 @@ footer{
 }
 
 
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 400px) 
-  and (min-device-height: 780px) 
-  and (max-device-height: 850px) 
-  and (-webkit-device-pixel-ratio: 2) {
-    /* Custom styles for Redmi 13C */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+
+body{
+    margin: 0%;
+    /* user-select: none; */
+    padding: 0;
+    position: relative;
+    scroll-behavior: smooth;
+    background: #000000e1;
+
+}
+.loader{
+    width: 100%;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    top: 1%;
+    transition: transform 2s ease-in;
+    height: 90vh;
+    border-radius: 0px 0px 56px 57px;
+    background: rgba(21, 21, 22, 0.884);
+}
+.data{
+    position: relative;
+    display: flex;
+    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data h1{
+    width: 205px;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+.data h1::after{
+    content: "back";
+    color: violet;
+    text-transform: capitalize;
+}
+.main{
+    height: 100%;
+    display: none;
+    position: relative;
+    top: -50%;
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(50deg, rgb(0 0 0 / 30%) 30%, rgb(0 0 0 / 30%) 20%), url(main.png);
+}
+.subham_data{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 41%;
+    left: 9%;
+
+}
+.subham_data1{
+   font-size: 18px;
+        color: #fff;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        border-right: .15px solid #fff;
+        animation: type 3s steps(30);
+    }
+}
+@keyframes type{
+    from {width: 0;}
+    to{width: 100%;}
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    top: 0%;
+    left: 24%;
+    position: absolute;
+}
+.nav ul{
+    position: relative;
+   
+    left: -2%;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 38px;
+}
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav ul li:first-child a {
+   
+    color: rgb(190, 26, 76) !important;
+}
+.nav ul li::after{
+    content: ' ';
+    width: 0%;
+    left: 0%;
+    height: 3px;
+    bottom: -10px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    transition: 0.3s;
+    
+}
+.nav ul li:first-child::after{
+    background-color:  rgb(190, 26, 76);
+}
+.nav ul li:hover:after{
+width: 100%;
+}
+.menu{
+    color: #fff;
+    font-size: 29px;
+    cursor: grab;
+    background-color: transparent;
+    position: absolute;
+    top: 6%;
+    left: 20%;}
+   
+            .button {
+                font-size: 17px;
+                width: 118px;
+                height: 54px;
+                text-transform: capitalize;
+                position: absolute;
+                top: 67%;
+                border: none;
+                left: 35%;
+                border-radius: 24%;
+                color: #fff;
+                border-left: 20px solid #fafffb; 
+                transition: 0.5s; 
+                overflow: hidden;
+                background: rgb(190, 26, 76);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+    
+            .button:hover {
+                border-left: 0px solid ; 
+            }
+
+           
+
+            
+            .this{
+                color: #fff;
+                display: unset;
+                text-transform: capitalize;
+                font-size: 12px;
+                position: absolute;
+                top: 54%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                left: 10%;
+           
+            }
+    
+   
+    .banner2{
+       
+        width: 100%;
+        height: 84vh;
+       
+        overflow-y: hidden;
+       background-color: #fff;
+        
+    }
+    #day{
+        box-shadow:  0 0 20px #9a6a6a;
+        display: grid;
+        width: 67px;
+        border-radius: 20px;
+        height: 30px;
+        background: #5fb4ed;
+        justify-content: flex-end;
+        position: relative;
+        top: 76%;
+        left: 47%;
+        cursor: pointer;
+        border: 2px solid gray;
+
+    }
+    #day i {
+        font-size: 30px;
+        transition: 0.3s;
+        color: #fff;
+    }
+    .logo img{
+        background: #fcff0094;
+        width: 287px;
+        clip-path: inset(-5% -8% 16% -5%);
+        height: 283px;
+        filter: drop-shadow(2px 4px 6px #fff);
+        margin: 23px;
+        transform: rotatey(187deg);
+        border-radius: 108%;
+      
+    }
+    .frontend{
+        color: rgb(17, 218, 213);
+    cursor: pointer;
+    text-shadow: 0 0 17px #fff;
+    writing-mode: vertical-lr;
+    font-size: 13px;
+    font-family: monospace;
+    text-transform: capitalize;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    letter-spacing: 11px;
+    }
+    #animation{
+        transform: translateY(20px);
+        opacity: 0;
+        transition: .3s;
+    }
+    #animation.visible{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+    .my2nddata{
+        color: #000;
+        font-size: 16px;
+        width: 610px;
+                display: none;
+
+        top: 39%;
+        position: absolute;
+        text-align: center;
+        left: 49%;
+        text-shadow: 0 0 0px BLACK;
+        font-family: cursive;
+        text-transform: uppercase;
+    }
+    .banner3{
+        width: 100%;
+        height: 83vh;
+        top: 167%;
+        display: none;
+        overflow: hidden;
+        background: black;
+        
+
+    }
+    .image1{
+        position: absolute;
+    border-radius: 47px;
+    width: 100%;
+    z-index: -1;
+    }
+    
+    #particalehead{
+        position: relative;
+    margin-top: -33%;
+    left: 1%;
+    gap: 10px;
+    display: flex;
+    }
+    #particalehead .my1{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 14%;
+
+        left: 36%;
+    }
+    #particalehead .my2{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 14%;
+        gap: 10px;
+        left: 38%;
+    }
+    #particalehead .my3{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 14%;
+        left:40%;
+    }
+    #particalehead .my4{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 14%;
+        left: 42%;
+    }
+    #particalehead .my5{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 14%;
+        left: 44%;
+    }
+    #particalehead .my6{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 14%;
+        left: 46%;
+    }
+    #particalehead .my7{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 21%;
+        left: 36%;
+    }
+    #particalehead .my8{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 21%;
+        left: 38%;
+    }
+    #particalehead .my9{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 21%;
+        left: 40%;
+    }
+    #particalehead .my10{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 21%;
+        left: 42%;
+    }
+    #particalehead .my11{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 21%;
+        left: 44%;
+    }
+    #particalehead .my12{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 21%;
+        left: 46%;
+    }
+
+    #particalehead .my13{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 28%;
+        left: 36%;
+    }
+
+    #particalehead .my14{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 28%;
+        left: 38%;
+    }
+
+    #particalehead .my15{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 28%;
+        left: 40%;
+    }
+
+    #particalehead .my16{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 28%;
+        left: 42%;
+    }
+
+    #particalehead .my17{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 28%;
+        left: 44%;
+    }
+
+    #particalehead .my18{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 28%;
+        left: 46%;
+    }
+  
+    #particalehead .my19{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 35%;
+        left: 36%;
+    }
+    
+    
+
+    #particalehead .my20{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 35%;
+        left: 38%;
+    }
+
+    #particalehead .my21{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 35%;
+        left: 40%;
+    }
+
+    #particalehead .my22{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 35%;
+        left: 42%;
+    }
+
+    #particalehead .my23{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 35%;
+        left: 44%;
+    }
+
+    #particalehead .my24{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 35%;
+        left: 46%;
+    }
+  
+    #particalehead .my25{
+        width: 6px;
+        height: 5px;
+        position: absolute;
+        background-color: red;
+        top: 42%;
+        left: 36%;
+    }
+.hirebutton{
+    width: 133px;
+    box-shadow: 0 0 30px #000;
+    background-color: rgb(87, 211, 30);
+    border-radius: 17%;
+    position: absolute;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    height: 43px;
+   margin-top: 27%;
+    transition: 0.5s;
+    left: 25%;
+}
+.hirebutton:hover{
+    border-left: 20px solid #fafffb;
+}
+
+.login{
+   width: 13%;
+    height: 82%;
+    position: relative;
+    background-color: rgba(111, 88, 88, 0.53);
+    top: -75%;
+    filter: revert;
+    border-radius: 30px;
+    border: none;
+    transition: filter 1s, opacity 1s;
+    /* left: 9%; */
+}
+    
+.hirebutton:active .login{
+display: block;
+}
+fieldset{
+    width: 319px;
+    height: 94%;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+    left: 61%;
+    margin: -72px -7px 3px;
+}
+.textar{
+        margin-top: 16%;
+}
+input[type="text"]{
+    width: 92%;
+    height: 30px;
+    box-shadow: 0 0 10px #000;
+
+    position: absolute;
+    top: 14%;
+    background: #ffeaea;
+    border-radius: 16px;
+    text-transform: capitalize;
+    left: 3%;
+    border: none;
+}
+input[type="number"]{
+    width: 92%;
+    height: 36px;
+    position: absolute;
+    top: 32%;
+    background: #fff1f1;
+    text-transform: capitalize;
+    border-radius: 16px;
+    box-shadow: 0 0 10px #000;
+    border: none;
+    left: 3%;
+}
+input[type="number"]:active{
+    border: none;
+}
+label{
+    font-size: 20px;
+    font-family: system-ui;
+    display: flex;
+    text-transform: capitalize;
+    position: relative;
+    gap: 10px;
+    margin-top: 6%;
+    padding: 7px;
+
+}
+input[type="submit"]{
+    width: 92%;
+    height: 42px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 69%;
+    background: #18e04f;
+    text-transform: capitalize;
+    border-radius: 11px;
+    left: 3%;
+}.login h1{ 
+    position: absolute;
+    text-transform: capitalize;
+    top: 10%;
+    display: none;
+    width: 600px;
+    color: #fff;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+}
+.shape{
+    width: 241px;
+    height: 179px;
+    background: #fcff0094;
+    position: relative;
+    margin-top: 21%;
+    clip-path: inset(4%);
+    left: 79%;
+    border-radius: 50%;
+}
+.myservices{
+    width: 100%;
+    height: 40vh;
+}
+.myservices h1{
+    color: transparent;
+    font-size: 191px;
+    background-size: cover;
+    display: flex;
+    background-image: url('download (1).jpg');
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: system-ui;
+    background-clip: text;
+}
+#animation1{
+    transform: translateX(13px);
+    opacity: 0;
+    transition:  0.7s;
+}
+#animation1.visible{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.container{
+    width: 100%;
+    height: 744px;
+   display: flex;
+  opacity: 0;
+    position: relative;
+    top: 6%;
+    left: 0%;
+    gap: 10px;
+}
+.frame{
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    height:744px;
+    box-shadow: 47px 48px 99px 105px  #978383;
+    border-radius: 30px;
+    border-top: 10px solid #fff;
+    border-inline: 10px solid #fff;
+    border-bottom: 5px solid #fff;
+
+}
+.slide{
+display: flex;
+    transition: 0.4s;
+}
+.box{
+    width: 34%;
+    margin: 10px;
+    flex-shrink: 0;
+    transition: 0.3s;
+    padding: 10px;
+    
+    
+
+
+    border: 1px solid #fff;
+    box-shadow: 0 0 11px #934949;
+    border-radius: 30px;
+    height: 691px;
+    background:linear-gradient(90deg, rgb(126 65 135 / 76%) 52%, rgb(191 47 182 / 61%) 83%);
+}
+.box h1{
+    color: #fff;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.box p{
+    font-size: 17px;
+    color: #fff;
+    text-align: right;
+    text-transform: capitalize;
+}
+.box span{
+    
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: unset;
+}
+.box .banckk{
+   width: 100%;
+    height: 47%;
+    background-color: #000000a3;
+}
+.banckk h2{
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    top: 66%;
+    left: 23%;
+}
+.banckk #butt{
+    width: 200px;
+    text-transform: capitalize;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    color: #fefeff;
+    background: linear-gradient(45deg, #1311b7, #a72b2b);
+    position: absolute;
+    top: 35%;
+    left: 9%;
+}
+.banckk #butt1{
+    width: 200px;
+    text-transform: capitalize;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    color: #fefeff;
+    background: linear-gradient(45deg, #1311b7, #a72b2b);
+    position: absolute;
+    top: 35%;
+    left: 49%;
+}
+#close1{
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#prv{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 43%;
+    filter: invert(1);
+}
+#next{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    filter: invert(1);
+    top: 43%;
+}
+.dayyandnight{
+    box-shadow: 0 0 20px #9a6a6a;
+    display: grid;
+    width: 67px;
+    border-radius: 20px;
+    height: 30px;
+    background: #79451f;
+    justify-content: flex-end;
+    position: relative;
+    top: 2%;
+    left: 47%;
+    cursor: pointer;
+    border: 2px solid gray;
+}
+.dayyandnight i{
+    font-size: 30px;
+    transition: 0.3s;
+    color: #000000;
+}
+.banner3 .hk1{
+    color: #fff;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+#dayyq{
+    transition: 0.4s;
+}
+.banner4{
+    width: 100%;
+    height: 100vh;
+background-image: linear-gradient(50deg, rgb(14 31 135 / 0%), rgb(43 57 99 / 68%)),url("background-wave-minimalist-modern-style_483537-5220.avif");
+background-position: center;
+overflow: hidden;
+background-size: cover;}
+#productdata{
+    
+    color: #fff;
+    font-size: 40px;
+    margin: 35px 42px;
+    text-transform: capitalize;
+}
+.myimage{
+   width: 316px;
+    height: 227px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 20px 8px 2px #7f7878;
+    text-align: center;
+    left: 2%;
+   
+}
+.banner4 .a{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    text-transform: capitalize;
+    left: 30%;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+}
+.banner4 .a:hover{
+    color: #79451f;
+
+}
+#animation2{
+    transform: translateX(20px);
+    opacity: 0;
+    transition: 0.3s;
+}
+#animation2.visible{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.banner4 h1{
+    color: #fff;
+    font-size: 41px;
+    text-transform: capitalize;
+    margin: 0px;
+    position: relative;
+    bottom: 224px;
+    left: 76px;
+    top: -3%;
+}
+.lineani{
+    background: linear-gradient(45deg, #ffffff00, #ffe2e2);
+    width: 30%;
+    position: absolute;
+    height: 1px;
+    left: 18%;
+}
+.banner5{
+    background: linear-gradient(50deg, rgba(0,0,0,0.0)40%,rgba(0,0,0,0.0)20%);
+    width: 100%;
+    overflow: hidden;
+    height: 40vh;
+    
+}
+table{
+    margin: 20px;
+
+}
+table th{
+    color: #fff;
+    text-transform: uppercase;
+}
+table td{
+    padding: 10px;
+    color: #fff;
+    text-transform: capitalize;
+}
+#fada {
+  color: #fff;
+    position: relative;
+    left: 51%;
+    /* transform: scale(3.5); */
+    color: #fff;
+    font-size: 171%;
+    bottom: 10%;
+    /* margin: 20%; */
+    padding: 1px 7px;
+}
+footer{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
 
 
     
-}
+
