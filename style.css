@@ -502,11 +502,11 @@ width: 100%;
 }
 
 .login{
-   width: 79%;
-    height: 82%;
-    position: relative;
+    width: 79%;
+    height: 17%;
+    position: absolute;
     background-color: rgba(111, 88, 88, 0.53);
-    top: -96%;
+    top: 34%;
     filter: revert;
     border-radius: 30px;
     border: none;
@@ -527,9 +527,6 @@ fieldset{
     position: relative;
     left: 61%;
     margin: -72px -7px 3px;
-}
-.textar{
-        margin-top: 16%;
 }
 input[type="text"]{
     width: 92%;
@@ -901,11 +898,6 @@ footer{
 
 
 
-
-
-
-
-
 @media only screen and (max-width: 768px) {
 
 
@@ -980,7 +972,7 @@ body{
         border-right: .15px solid #fff;
         animation: type 3s steps(30);
     }
-}
+
 @keyframes type{
     from {width: 0;}
     to{width: 100%;}
@@ -1800,3 +1792,4 @@ footer{
 
     
 
+}
