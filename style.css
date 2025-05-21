@@ -874,7 +874,9 @@ footer{
 }
 
 
-
+.textar{
+        margin-top: 20%;
+}
 
 
 
@@ -1436,9 +1438,7 @@ fieldset{
     left: 61%;
     margin: -72px -7px 3px;
 }
-.textar{
-        margin-top: 16%;
-}
+
 input[type="text"]{
     width: 92%;
     height: 30px;
