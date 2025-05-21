@@ -846,6 +846,9 @@ table{
     margin: 20px;
 
 }
+textar{
+        margin-top: 20%;
+}
 table th{
     color: #fff;
     text-transform: uppercase;
@@ -855,6 +858,7 @@ table td{
     color: #fff;
     text-transform: capitalize;
 }
+
 #fada {
   color: #fff;
     position: relative;
@@ -866,6 +870,7 @@ table td{
     /* margin: 20%; */
     padding: 1px 7px;
 }
+
 footer{
     color: #fff;
     text-align: center;
@@ -874,9 +879,7 @@ footer{
 }
 
 
-textar{
-        margin-top: 20%;
-}
+
 
 
 
