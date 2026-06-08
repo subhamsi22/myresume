@@ -1,10 +1,8 @@
-#dns {
-    font-family: "Dancing Script", cursive;
-}
-
+/* Cursor blink animation */
 .typing-cursor::after {
     content: '|';
     animation: blink 1s step-start infinite;
+    color: #3b82f6; /* Tailwind blue-500 */
 }
 
 @keyframes blink {
@@ -13,21 +11,29 @@
     }
 }
 
-
+/* Custom interactive cursor trailing style */
 #move {
     position: fixed;
-
     transform: translate(-50%, -50%);
-    font-size: 50px;
-    z-index: 999;
-    color: #808080;
+    z-index: 9999;
     pointer-events: none;
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#move2 {
-    transition: 0.2s;
+/* Soft ambient glow effect for the grid background */
+.radial-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
 
-#ss {
-    top: -30px;
+.radial-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+}
+
+.radial-glow-cyan {
+    background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.15) 0%, transparent 60%);
 }
