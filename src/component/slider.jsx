@@ -1,11 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import tubeviews from "../pics/tubeviews.png"
 import digitel from "../pics/digitel.png"
-import { FaExternalLinkAlt, FaCode, FaServer, FaDatabase, FaVideo, FaCalculator, FaShoppingBag } from 'react-icons/fa';
+import pixels from "../pics/pixels.png"
+import karopitch from "../pics/karopitch.png"
+import seotool from "../pics/seotool.png"
+import { FaExternalLinkAlt, FaCode, FaServer, FaDatabase, FaVideo, FaCalculator, FaShoppingBag, FaSearch, FaRocket, FaShieldAlt } from 'react-icons/fa';
 
 const slideData = [
     {
         id: 1,
+        title: "Pixels",
+        description: "A compliance SaaS platform simplifying regulatory filings for independent research analysts and firms. Features end-to-end compliance support, pricing tiers, and a professional consulting interface.",
+        image: pixels,
+        link: "https://pixels-topaz.vercel.app/",
+        tags: ["React", "Tailwind CSS", "Vite", "Responsive Design"],
+        gradient: "from-blue-500/20 to-sky-500/20",
+        icon: <FaShieldAlt className="text-blue-400 text-6xl" />
+    },
+    {
+        id: 2,
+        title: "Karo Pitch",
+        description: "A startup pitch platform connecting founders from Tier-2 and Tier-3 cities across India with top investors. Features founder stories, investor matching, and a streamlined application pipeline.",
+        image: karopitch,
+        link: "https://karo-pitch-project-weld.vercel.app/",
+        tags: ["React", "Tailwind CSS", "GSAP", "Vite"],
+        gradient: "from-amber-500/20 to-orange-500/20",
+        icon: <FaRocket className="text-amber-400 text-6xl" />
+    },
+    {
+        id: 3,
+        title: "SEO Link Streamer Pro",
+        description: "An SEO automation tool that increases your Google search ranking by streaming targeted link visits. Configure loops, delays, and track real-time progress to push your website to the top of search results.",
+        image: seotool,
+        link: "#",
+        tags: ["JavaScript", "Chrome API", "SEO", "Automation"],
+        gradient: "from-cyan-500/20 to-indigo-500/20",
+        icon: <FaSearch className="text-cyan-400 text-6xl" />
+    },
+    {
+        id: 4,
         title: "TubeViews",
         description: "An analytics tool helping content creators track key metrics, forecast performance, and optimize channel growth strategies.",
         image: tubeviews,
@@ -15,7 +48,7 @@ const slideData = [
         icon: <FaVideo className="text-red-500 text-6xl" />
     },
     {
-        id: 2,
+        id: 5,
         title: "School Management System",
         description: "An enterprise-grade administration suite for educational institutions, handling student records, faculty allocation, scheduling, and invoicing.",
         link: "#",
@@ -24,7 +57,7 @@ const slideData = [
         icon: <FaDatabase className="text-blue-400 text-6xl animate-pulse" />
     },
     {
-        id: 3,
+        id: 6,
         title: "Digitel Risk",
         description: "A comprehensive digital risk management and tracking suite mapping threat profiles, uptime metrics, and vulnerability audits.",
         image: digitel,
@@ -34,7 +67,7 @@ const slideData = [
         icon: <FaServer className="text-emerald-400 text-6xl" />
     },
     {
-        id: 4,
+        id: 7,
         title: "Auto Youtube Video Uploader",
         description: "A secure automation script syncing local video assets with YouTube using cron scheduling, OAuth2 verification, and customizable metadata templates.",
         link: "#",
@@ -43,7 +76,7 @@ const slideData = [
         icon: <FaCode className="text-amber-400 text-6xl" />
     },
     {
-        id: 5,
+        id: 8,
         title: "Trust Point Tax Solution",
         description: "A modern corporate landing page and portal calculation utility for corporate taxation compliance, tax mapping, and client consulting files.",
         link: "#",
@@ -52,7 +85,7 @@ const slideData = [
         icon: <FaCalculator className="text-violet-400 text-6xl" />
     },
     {
-        id: 6,
+        id: 9,
         title: "Myntra Clone",
         description: "A highly responsive e-commerce web application recreating the core user flows of Myntra, featuring filters, cart states, and simulated checkouts.",
         link: "#",
