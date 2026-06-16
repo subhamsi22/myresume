@@ -4,6 +4,7 @@ import digitel from "../pics/digitel.png"
 import pixels from "../pics/pixels.png"
 import karopitch from "../pics/karopitch.png"
 import seotool from "../pics/seotool.png"
+import gst from "../pics/gst.png"
 import { FaExternalLinkAlt, FaCode, FaServer, FaDatabase, FaVideo, FaCalculator, FaShoppingBag, FaSearch, FaRocket, FaShieldAlt } from 'react-icons/fa';
 
 const slideData = [
@@ -92,7 +93,17 @@ const slideData = [
         tags: ["React", "Redux Toolkit", "Node.js", "Tailwind CSS"],
         gradient: "from-pink-500/20 to-rose-500/20",
         icon: <FaShoppingBag className="text-pink-400 text-6xl" />
-    }
+    },
+    {
+        id: 11,
+        title: "GST Calculator",
+        description: "This GST Calculator helps users quickly calculate GST-inclusive and GST-exclusive prices. I have personally used similar calculators while creating invoices and estimating project costs for clients.",
+        image: gst,
+        link: "https://gst-calculator-psi.vercel.app/",
+        tags: ["JavaScript", "HTML", "CSS"],
+        gradient: "from-amber-500/20 to-orange-500/20",
+        icon: <FaRocket className="text-amber-400 text-6xl" />
+    },
 ];
 
 export default function Slider() {
@@ -156,71 +167,71 @@ export default function Slider() {
                         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                     >
                         {slideData.map((slide, index) => (
-                          <div 
-                            key={slide.id} 
-                            className="min-w-full h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 relative overflow-hidden"
-                          >
-                            {/* Colorful Glow Backgrounds */}
-                            <div className={`absolute inset-0 bg-gradient-to-br ${slide.gradient} opacity-20 z-0`}></div>
-                            <div className={`absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br ${slide.gradient} rounded-full blur-[120px] opacity-30`}></div>
-                            <div className={`absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr ${slide.gradient} rounded-full blur-[120px] opacity-30`}></div>
+                            <div
+                                key={slide.id}
+                                className="min-w-full h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 relative overflow-hidden"
+                            >
+                                {/* Colorful Glow Backgrounds */}
+                                <div className={`absolute inset-0 bg-gradient-to-br ${slide.gradient} opacity-20 z-0`}></div>
+                                <div className={`absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br ${slide.gradient} rounded-full blur-[120px] opacity-30`}></div>
+                                <div className={`absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr ${slide.gradient} rounded-full blur-[120px] opacity-30`}></div>
 
-                            {/* Left Side: Text Details */}
-                            <div className="relative z-10 w-full md:w-1/2 flex flex-col items-start text-left order-2 md:order-1 mt-6 md:mt-0 pr-0 md:pr-8 select-none">
-                              <span className="inline-block py-1 px-3.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[10px] font-bold tracking-widest uppercase mb-4 backdrop-blur-md">
-                                  Project 0{index + 1}
-                              </span>
-                              <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-4 tracking-tight font-display">
-                                  {slide.title}
-                              </h3>
-                              <p className="text-xs md:text-sm text-zinc-400 leading-relaxed mb-6 max-w-md font-sans">
-                                  {slide.description}
-                              </p>
-                              
-                              {/* Tech Stack Chips */}
-                              <div className="flex flex-wrap gap-2 mb-6">
-                                  {slide.tags.map((tag, i) => (
-                                      <span key={i} className="text-[10px] md:text-xs font-semibold px-2.5 py-1 bg-zinc-900/60 border border-zinc-800 rounded-lg text-zinc-300 font-sans">
-                                          {tag}
-                                      </span>
-                                  ))}
-                              </div>
+                                {/* Left Side: Text Details */}
+                                <div className="relative z-10 w-full md:w-1/2 flex flex-col items-start text-left order-2 md:order-1 mt-6 md:mt-0 pr-0 md:pr-8 select-none">
+                                    <span className="inline-block py-1 px-3.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[10px] font-bold tracking-widest uppercase mb-4 backdrop-blur-md">
+                                        Project 0{index + 1}
+                                    </span>
+                                    <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-4 tracking-tight font-display">
+                                        {slide.title}
+                                    </h3>
+                                    <p className="text-xs md:text-sm text-zinc-400 leading-relaxed mb-6 max-w-md font-sans">
+                                        {slide.description}
+                                    </p>
 
-                              <a 
-                                  href={slide.link} 
-                                  target={slide.link !== "#" ? "_blank" : undefined}
-                                  rel="noreferrer"
-                                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zinc-950 font-bold hover:bg-zinc-200 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 font-display text-xs uppercase tracking-wider"
-                              >
-                                  <span>View Project</span>
-                                  <FaExternalLinkAlt className="text-[10px]" />
-                              </a>
-                            </div>
-
-                            {/* Right Side: Graphic Panel */}
-                            <div className="relative z-10 w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center order-1 md:order-2">
-                                {slide.image ? (
-                                    /* Sleek screenshot container with skew overlay */
-                                    <div className="w-full max-w-[420px] rounded-2xl overflow-hidden shadow-2xl border border-zinc-800/85 bg-zinc-950/50 p-2 hover:scale-[1.02] duration-300">
-                                        <img
-                                            src={slide.image}
-                                            alt={slide.title}
-                                            className="w-full h-auto rounded-lg object-cover"
-                                        />
+                                    {/* Tech Stack Chips */}
+                                    <div className="flex flex-wrap gap-2 mb-6">
+                                        {slide.tags.map((tag, i) => (
+                                            <span key={i} className="text-[10px] md:text-xs font-semibold px-2.5 py-1 bg-zinc-900/60 border border-zinc-800 rounded-lg text-zinc-300 font-sans">
+                                                {tag}
+                                            </span>
+                                        ))}
                                     </div>
-                                ) : (
-                                    /* Creative abstract vector frame for missing screenshots */
-                                    <div className="w-56 h-56 md:w-64 md:h-64 rounded-3xl glass-light border border-zinc-800/80 flex flex-col items-center justify-center p-6 relative group/card hover:scale-105 duration-300">
-                                        <div className="p-5 rounded-2xl bg-zinc-950/60 border border-zinc-800 flex items-center justify-center shadow-lg mb-4">
-                                            {slide.icon}
+
+                                    <a
+                                        href={slide.link}
+                                        target={slide.link !== "#" ? "_blank" : undefined}
+                                        rel="noreferrer"
+                                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zinc-950 font-bold hover:bg-zinc-200 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 font-display text-xs uppercase tracking-wider"
+                                    >
+                                        <span>View Project</span>
+                                        <FaExternalLinkAlt className="text-[10px]" />
+                                    </a>
+                                </div>
+
+                                {/* Right Side: Graphic Panel */}
+                                <div className="relative z-10 w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center order-1 md:order-2">
+                                    {slide.image ? (
+                                        /* Sleek screenshot container with skew overlay */
+                                        <div className="w-full max-w-[420px] rounded-2xl overflow-hidden shadow-2xl border border-zinc-800/85 bg-zinc-950/50 p-2 hover:scale-[1.02] duration-300">
+                                            <img
+                                                src={slide.image}
+                                                alt={slide.title}
+                                                className="w-full h-auto rounded-lg object-cover"
+                                            />
                                         </div>
-                                        <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">
-                                            System Module
-                                        </span>
-                                    </div>
-                                )}
+                                    ) : (
+                                        /* Creative abstract vector frame for missing screenshots */
+                                        <div className="w-56 h-56 md:w-64 md:h-64 rounded-3xl glass-light border border-zinc-800/80 flex flex-col items-center justify-center p-6 relative group/card hover:scale-105 duration-300">
+                                            <div className="p-5 rounded-2xl bg-zinc-950/60 border border-zinc-800 flex items-center justify-center shadow-lg mb-4">
+                                                {slide.icon}
+                                            </div>
+                                            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">
+                                                System Module
+                                            </span>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
-                          </div>
                         ))}
                     </div>
                 </div>
@@ -243,11 +254,10 @@ export default function Slider() {
                     <button
                         key={index}
                         onClick={() => setCurrentIndex(index)}
-                        className={`transition-all duration-300 rounded-full cursor-pointer ${
-                            currentIndex === index
-                                ? 'w-8 h-2 bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.6)]'
-                                : 'w-2 h-2 bg-zinc-700 hover:bg-zinc-500'
-                        }`}
+                        className={`transition-all duration-300 rounded-full cursor-pointer ${currentIndex === index
+                            ? 'w-8 h-2 bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.6)]'
+                            : 'w-2 h-2 bg-zinc-700 hover:bg-zinc-500'
+                            }`}
                         aria-label={`Go to slide ${index + 1}`}
                     />
                 ))}
