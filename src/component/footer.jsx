@@ -206,10 +206,7 @@ export default function Footer() {
             {/* Bottom Copyright Section */}
             <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-zinc-500 text-xs md:text-sm gap-4 select-none">
                 <p>&copy; {new Date().getFullYear()} Subham Singh. All rights reserved.</p>
-                <p className="flex items-center gap-1.5 hover:text-zinc-400 duration-300">
-                    <span>Designed & Built with React, GSAP & Tailwind v4</span>
-                    <FaExternalLinkAlt className="text-[10px]" />
-                </p>
+               
             </div>
         </footer>
     );

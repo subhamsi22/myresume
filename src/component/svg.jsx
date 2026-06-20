@@ -22,7 +22,7 @@ function Newsvg() {
                 attr: { d: newpt },
                 ease: "power2.out"
             })
-        };
+        };z
 
         const handleMouseLeave = () => {
             gsap.to(pathel, {
