@@ -9,7 +9,7 @@ function Newsvg() {
         const strel = strref.current;
         const pathel = pathref.current;
         const defaultpath = "M 1 80 Q 700 80 1400 80";
-        
+
         const handleMouseMove = (e) => {
             const rect = strel.getBoundingClientRect();
             // Calculate mouse coordinates relative to the SVG container
@@ -22,7 +22,7 @@ function Newsvg() {
                 attr: { d: newpt },
                 ease: "power2.out"
             })
-        };z
+        };
 
         const handleMouseLeave = () => {
             gsap.to(pathel, {
@@ -43,10 +43,10 @@ function Newsvg() {
 
     return (
         <div id="string2" ref={strref} className="w-full relative overflow-hidden py-10 flex justify-center items-center">
-            <svg 
-                className="w-full bg-transparent max-w-7xl cursor-pointer" 
-                height="200" 
-                viewBox="0 0 1400 200" 
+            <svg
+                className="w-full bg-transparent max-w-7xl cursor-pointer"
+                height="200"
+                viewBox="0 0 1400 200"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <defs>
@@ -65,13 +65,13 @@ function Newsvg() {
                         </feMerge>
                     </filter>
                 </defs>
-                
+
                 <path
                     ref={pathref}
-                    d="M 1 80 Q 700 80 1400 80" 
-                    stroke="url(#neon-line-grad)" 
+                    d="M 1 80 Q 700 80 1400 80"
+                    stroke="url(#neon-line-grad)"
                     strokeWidth="3.5"
-                    fill="transparent" 
+                    fill="transparent"
                     filter="url(#neon-glow-filter)"
                     className="transition-shadow duration-300"
                 />
