@@ -80,7 +80,7 @@ const slideData = [
         id: 8,
         title: "Trust Point Tax Solution",
         description: "A modern corporate landing page and portal calculation utility for corporate taxation compliance, tax mapping, and client consulting files.",
-        link: "#",
+        link: "https://trustpoint-tax-solutions.vercel.app/",
         tags: ["React", "Tailwind CSS", "Framer Motion"],
         gradient: "from-violet-500/20 to-indigo-500/20",
         icon: <FaCalculator className="text-violet-400 text-6xl" />
