@@ -26,7 +26,7 @@ const MainText = ({ displayText }) => {
     <div className='w-full min-h-[60px] flex justify-center items-center py-4 sm:py-6 md:py-8 px-4 font-display'>
       <h1
         ref={textRef}
-        className='text-zinc-200 hover:text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-center font-black uppercase tracking-widest flex flex-wrap justify-center select-none cursor-default transition-all duration-500 hover:tracking-[0.15em]'
+        className='text-zinc-800 hover:text-zinc-950 text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-center font-black uppercase tracking-widest flex flex-wrap justify-center select-none cursor-default transition-all duration-500 hover:tracking-[0.15em]'
       >
         {(Array.isArray(displayText) ? displayText : displayText.split("")).map((char, index) => (
           <span

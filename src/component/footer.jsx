@@ -44,7 +44,7 @@ export default function Footer() {
     };
 
     return (
-        <footer id='contact' className="w-full bg-zinc-950 text-white py-20 px-6 sm:px-12 lg:px-24 border-t border-zinc-900 font-sans relative overflow-hidden">
+        <footer id='contact' className="w-full bg-slate-50 text-zinc-900 py-20 px-6 sm:px-12 lg:px-24 border-t border-zinc-200 font-sans relative overflow-hidden">
             {/* Background glowing gradients */}
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-tr from-blue-500/5 to-purple-500/5 rounded-full blur-[120px] pointer-events-none"></div>
             <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-cyan-500/5 to-indigo-500/5 rounded-full blur-[120px] pointer-events-none"></div>
@@ -57,64 +57,64 @@ export default function Footer() {
                         <span className="text-xs font-bold tracking-widest text-blue-500 uppercase px-3 py-1 bg-blue-500/10 rounded-full border border-blue-500/20">
                             Get In Touch
                         </span>
-                        <h2 className="text-4xl md:text-5xl font-black mt-4 mb-4 font-display bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-400 text-glow-indigo">
+                        <h2 className="text-4xl md:text-5xl font-black mt-4 mb-4 font-display bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 text-glow-indigo">
                             Let's Work Together
                         </h2>
-                        <p className="text-zinc-400 mb-8 text-sm md:text-base leading-relaxed">
+                        <p className="text-zinc-600 mb-8 text-sm md:text-base leading-relaxed">
                             Feel free to reach out for collaborations, inquiries, or just a friendly hello. I will get back to you as soon as possible.
                         </p>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="space-y-6 glass p-8 rounded-3xl border border-zinc-800/80 shadow-2xl">
+                    <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-3xl border border-zinc-200 shadow-xl">
                         {/* Hidden fields for FormSubmit configuration */}
                         <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio!" />
                         <input type="hidden" name="_captcha" value="false" />
                         
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div className="flex flex-col">
-                                <label className="text-xs text-zinc-400 mb-2 font-semibold tracking-wider uppercase" htmlFor="name">Name</label>
+                                <label className="text-xs text-zinc-500 mb-2 font-semibold tracking-wider uppercase" htmlFor="name">Name</label>
                                 <input
                                     type="text"
                                     id="name"
                                     name="name"
                                     required
                                     placeholder="Subham Singh"
-                                    className="bg-zinc-950/80 border border-zinc-800 rounded-xl px-4 py-3 text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-all duration-300 text-sm"
+                                    className="bg-white border border-zinc-300 rounded-xl px-4 py-3 text-zinc-900 placeholder-zinc-400 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-all duration-300 text-sm"
                                 />
                             </div>
                             <div className="flex flex-col">
-                                <label className="text-xs text-zinc-400 mb-2 font-semibold tracking-wider uppercase" htmlFor="email">Email</label>
+                                <label className="text-xs text-zinc-500 mb-2 font-semibold tracking-wider uppercase" htmlFor="email">Email</label>
                                 <input
                                     type="email"
                                     id="email"
                                     name="email"
                                     required
                                     placeholder="subham@example.com"
-                                    className="bg-zinc-950/80 border border-zinc-800 rounded-xl px-4 py-3 text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-all duration-300 text-sm"
+                                    className="bg-white border border-zinc-300 rounded-xl px-4 py-3 text-zinc-900 placeholder-zinc-400 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-all duration-300 text-sm"
                                 />
                             </div>
                         </div>
 
                         <div className="flex flex-col">
-                            <label className="text-xs text-zinc-400 mb-2 font-semibold tracking-wider uppercase" htmlFor="phone">Phone Number</label>
+                            <label className="text-xs text-zinc-500 mb-2 font-semibold tracking-wider uppercase" htmlFor="phone">Phone Number</label>
                             <input
                                 type="tel"
                                 id="phone"
                                 name="phone"
                                 placeholder="+91 7319522543"
-                                className="bg-zinc-950/80 border border-zinc-800 rounded-xl px-4 py-3 text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-all duration-300 text-sm"
+                                className="bg-white border border-zinc-300 rounded-xl px-4 py-3 text-zinc-900 placeholder-zinc-400 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-all duration-300 text-sm"
                             />
                         </div>
 
                         <div className="flex flex-col">
-                            <label className="text-xs text-zinc-400 mb-2 font-semibold tracking-wider uppercase" htmlFor="message">Message</label>
+                            <label className="text-xs text-zinc-500 mb-2 font-semibold tracking-wider uppercase" htmlFor="message">Message</label>
                             <textarea
                                 id="message"
                                 name="message"
                                 required
                                 rows="4"
                                 placeholder="Tell me about your project..."
-                                className="bg-zinc-950/80 border border-zinc-800 rounded-xl px-4 py-3 text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-all duration-300 text-sm resize-none"
+                                className="bg-white border border-zinc-300 rounded-xl px-4 py-3 text-zinc-900 placeholder-zinc-400 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-all duration-300 text-sm resize-none"
                             ></textarea>
                         </div>
 
@@ -142,41 +142,41 @@ export default function Footer() {
                 {/* Right Side - Contact Info & Socials */}
                 <div className="w-full lg:w-1/3 flex flex-col justify-between py-2 lg:py-6">
                     <div className="space-y-8">
-                        <h3 className="text-xl font-bold uppercase tracking-wider text-white font-display border-b border-zinc-900 pb-3">
+                        <h3 className="text-xl font-bold uppercase tracking-wider text-zinc-900 font-display border-b border-zinc-200 pb-3">
                             Contact Details
                         </h3>
 
                         <div className="flex flex-col space-y-6">
                             <a 
                                 href="mailto:subhamsinghkk34@gmail.com" 
-                                className="flex items-center space-x-4 text-zinc-300 hover:text-white transition-colors duration-300 group"
+                                className="flex items-center space-x-4 text-zinc-600 hover:text-blue-600 transition-colors duration-300 group"
                             >
-                                <div className="w-12 h-12 rounded-xl bg-zinc-900/60 border border-zinc-800 flex items-center justify-center group-hover:bg-blue-500/15 group-hover:text-blue-400 group-hover:border-blue-500/30 transition-all duration-300">
+                                <div className="w-12 h-12 rounded-xl bg-white border border-zinc-200 flex items-center justify-center group-hover:bg-blue-50 group-hover:text-blue-600 group-hover:border-blue-200 transition-all duration-300 shadow-sm">
                                     <FaEnvelope className="text-lg" />
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-semibold">Email Me</span>
-                                    <span className="text-sm md:text-base font-semibold truncate max-w-[220px] sm:max-w-xs md:max-w-none">subhamsinghkk34@gmail.com</span>
+                                    <span className="text-sm md:text-base font-semibold truncate max-w-[220px] sm:max-w-xs md:max-w-none text-zinc-900">subhamsinghkk34@gmail.com</span>
                                 </div>
                             </a>
 
                             <a 
                                 href="tel:+917319522543" 
-                                className="flex items-center space-x-4 text-zinc-300 hover:text-white transition-colors duration-300 group"
+                                className="flex items-center space-x-4 text-zinc-600 hover:text-cyan-600 transition-colors duration-300 group"
                             >
-                                <div className="w-12 h-12 rounded-xl bg-zinc-900/60 border border-zinc-800 flex items-center justify-center group-hover:bg-cyan-500/15 group-hover:text-cyan-400 group-hover:border-cyan-500/30 transition-all duration-300">
+                                <div className="w-12 h-12 rounded-xl bg-white border border-zinc-200 flex items-center justify-center group-hover:bg-cyan-50 group-hover:text-cyan-600 group-hover:border-cyan-200 transition-all duration-300 shadow-sm">
                                     <FaPhone className="text-lg" />
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-semibold">Call Me</span>
-                                    <span className="text-sm md:text-base font-semibold">+91 7319522543</span>
+                                    <span className="text-sm md:text-base font-semibold text-zinc-900">+91 7319522543</span>
                                 </div>
                             </a>
                         </div>
                     </div>
 
                     <div className="space-y-6 mt-12 lg:mt-0 select-none">
-                        <h3 className="text-xl font-bold uppercase tracking-wider text-white font-display border-b border-zinc-900 pb-3">
+                        <h3 className="text-xl font-bold uppercase tracking-wider text-zinc-900 font-display border-b border-zinc-200 pb-3">
                             Connect
                         </h3>
                         <div className="flex gap-4">
@@ -184,7 +184,7 @@ export default function Footer() {
                                 href="https://github.com/" 
                                 target="_blank" 
                                 rel="noreferrer" 
-                                className="w-11 h-11 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-400 hover:text-white flex items-center justify-center hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+                                className="w-11 h-11 rounded-xl bg-white border border-zinc-200 hover:border-zinc-300 text-zinc-600 hover:text-zinc-900 flex items-center justify-center hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-md"
                                 aria-label="GitHub Profile"
                             >
                                 <FaGithub className="text-lg" />
@@ -193,7 +193,7 @@ export default function Footer() {
                                 href="https://linkedin.com/" 
                                 target="_blank" 
                                 rel="noreferrer" 
-                                className="w-11 h-11 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-400 hover:text-white flex items-center justify-center hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+                                className="w-11 h-11 rounded-xl bg-white border border-zinc-200 hover:border-zinc-300 text-zinc-600 hover:text-zinc-900 flex items-center justify-center hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-md"
                                 aria-label="LinkedIn Profile"
                             >
                                 <FaLinkedin className="text-lg" />
@@ -204,7 +204,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom Copyright Section */}
-            <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-zinc-500 text-xs md:text-sm gap-4 select-none">
+            <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center text-zinc-500 text-xs md:text-sm gap-4 select-none">
                 <p>&copy; {new Date().getFullYear()} Subham Singh. All rights reserved.</p>
                
             </div>

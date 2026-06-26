@@ -2,7 +2,8 @@
 .typing-cursor::after {
     content: '|';
     animation: blink 1s step-start infinite;
-    color: #3b82f6; /* Tailwind blue-500 */
+    color: #3b82f6;
+    /* Tailwind blue-500 */
 }
 
 @keyframes blink {
@@ -27,8 +28,9 @@
 .radial-grid {
     background-size: 40px 40px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
+
 
 .radial-glow {
     background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 60%);

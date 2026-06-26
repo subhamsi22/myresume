@@ -77,7 +77,7 @@ export default function Baaner() {
               src={k}
             ></video>
           </div>
-          <span className='absolute bottom-[-15px] right-[10%] md:right-[15%] text-4xl text-orange-500 bg-zinc-950/80 backdrop-blur-md border border-zinc-800 rounded-2xl p-3 shadow-lg z-20 animate-bounce' style={{ animationDuration: '4s' }}>
+          <span className='absolute bottom-[-15px] right-[10%] md:right-[15%] text-4xl text-orange-500 bg-white/80 backdrop-blur-md border border-zinc-200 rounded-2xl p-3 shadow-lg z-20 animate-bounce' style={{ animationDuration: '4s' }}>
             <FaHtml5 />
           </span>
         </div>
@@ -85,32 +85,32 @@ export default function Baaner() {
         {/* Right Side: Paragraph & Skills Grid */}
         <div className='w-full lg:w-1/2 flex flex-col justify-between gap-8'>
           <div className="space-y-4">
-            <p className='text-base sm:text-lg text-zinc-300 leading-relaxed text-justify font-sans'>
-              I’m <span className="font-bold text-white font-display">Subham Singh</span>, a BCA student dedicated to building practical, robust tech solutions. My core expertise covers full-stack web development, client-side React architectures, and low-level microprocessor configurations.
+            <p className='text-base sm:text-lg text-zinc-700 leading-relaxed text-justify font-sans'>
+              I’m <span className="font-bold text-zinc-900 font-display">Subham Singh</span>, a BCA student dedicated to building practical, robust tech solutions. My core expertise covers full-stack web development, client-side React architectures, and low-level microprocessor configurations.
             </p>
-            <p className='text-base sm:text-lg text-zinc-300 leading-relaxed text-justify font-sans'>
+            <p className='text-base sm:text-lg text-zinc-700 leading-relaxed text-justify font-sans'>
               Rather than studying code in theory, I believe in shipping clean, functional, and scalable systems. I am also diving deep into modern artificial intelligence and machine learning to build next-generation applications.
             </p>
           </div>
 
           {/* Interactive Skills Progress Grid */}
           <div className="space-y-4 mt-4">
-            <h3 className="text-xl font-bold uppercase tracking-wider text-white font-display">My Skill Matrix</h3>
+            <h3 className="text-xl font-bold uppercase tracking-wider text-zinc-900 font-display">My Skill Matrix</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {skills.map((skill, index) => (
                 <div 
                   key={index}
-                  className="skill-card p-4 rounded-2xl glass-light border border-zinc-800/80 hover:border-zinc-700/80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 flex items-center gap-4"
+                  className="skill-card p-4 rounded-2xl bg-white border border-zinc-200 hover:border-zinc-300 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 flex items-center gap-4"
                 >
-                  <div className="p-2.5 bg-zinc-950/60 rounded-xl border border-zinc-800/50">
+                  <div className="p-2.5 bg-zinc-50 rounded-xl border border-zinc-100">
                     {skill.icon}
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex justify-between items-center mb-1">
-                      <span className="text-sm font-semibold text-zinc-200 truncate">{skill.name}</span>
-                      <span className="text-xs font-bold text-blue-400">{skill.level}</span>
+                      <span className="text-sm font-semibold text-zinc-700 truncate">{skill.name}</span>
+                      <span className="text-xs font-bold text-blue-500">{skill.level}</span>
                     </div>
-                    <div className="w-full bg-zinc-950 h-1.5 rounded-full overflow-hidden border border-zinc-900">
+                    <div className="w-full bg-zinc-100 h-1.5 rounded-full overflow-hidden border border-zinc-200">
                       <div 
                         className="bg-gradient-to-r from-blue-500 to-cyan-400 h-full rounded-full transition-all duration-1000"
                         style={{ width: skill.level }}

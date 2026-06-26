@@ -26,7 +26,7 @@ const King = () => {
                     Welcome to my space
                 </p>
                 <h1 className='flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-3'>
-                    <span className='text-3xl sm:text-4xl md:text-5xl font-light text-zinc-300'>Hi, I'm</span>
+                    <span className='text-3xl sm:text-4xl md:text-5xl font-light text-zinc-700'>Hi, I'm</span>
                     <span className='flex items-center gap-2 md:gap-3'>
                         <span className='text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-400 text-glow-indigo'>
                             subham singh

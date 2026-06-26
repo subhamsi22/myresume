@@ -44,7 +44,7 @@ const Nav = () => {
                 <h1 
                     id='dns' 
                     onMouseEnter={handleChange} 
-                    className='text-xl md:text-2xl dancing-script typing-cursor cursor-default z-50 text-white font-bold select-none tracking-wide text-glow-indigo'
+                    className='text-xl md:text-2xl dancing-script typing-cursor cursor-default z-50 text-zinc-900 font-bold select-none tracking-wide text-glow-indigo'
                 >
                     {text}
                 </h1>
@@ -52,19 +52,19 @@ const Nav = () => {
                 {/* Desktop Menu */}
                 <ul className='hidden md:flex items-center gap-8 z-50'>
                     <li className='relative group'>
-                        <a href="#hj" className='text-zinc-300 hover:text-white font-medium uppercase text-sm tracking-wider transition-colors duration-300'>
+                        <a href="#hj" className='text-zinc-600 hover:text-zinc-900 font-medium uppercase text-sm tracking-wider transition-colors duration-300'>
                             Home
                         </a>
                         <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:w-full transition-all duration-300 rounded-full"></span>
                     </li>
                     <li className='relative group'>
-                        <a href="#about" className='text-zinc-300 hover:text-white font-medium uppercase text-sm tracking-wider transition-colors duration-300'>
+                        <a href="#about" className='text-zinc-600 hover:text-zinc-900 font-medium uppercase text-sm tracking-wider transition-colors duration-300'>
                             About Me
                         </a>
                         <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:w-full transition-all duration-300 rounded-full"></span>
                     </li>
                     <li className='relative group'>
-                        <a href="#slider" className='text-zinc-300 hover:text-white font-medium uppercase text-sm tracking-wider transition-colors duration-300'>
+                        <a href="#slider" className='text-zinc-600 hover:text-zinc-900 font-medium uppercase text-sm tracking-wider transition-colors duration-300'>
                             Projects
                         </a>
                         <span className="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:w-full transition-all duration-300 rounded-full"></span>
@@ -80,20 +80,20 @@ const Nav = () => {
                 </ul>
 
                 {/* Hamburger Icon */}
-                <div className='md:hidden z-50 text-xl cursor-pointer text-zinc-300 hover:text-white transition-colors' onClick={toggleMenu}>
+                <div className='md:hidden z-50 text-xl cursor-pointer text-zinc-700 hover:text-zinc-900 transition-colors' onClick={toggleMenu}>
                     {isMenuOpen ? <FaTimes /> : <FaBars />}
                 </div>
 
                 {/* Mobile Menu */}
-                <div className={`md:hidden fixed inset-0 w-full h-screen bg-zinc-950/95 backdrop-blur-xl flex flex-col items-center justify-center transition-all duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} z-40`}>
+                <div className={`md:hidden fixed inset-0 w-full h-screen bg-white/95 backdrop-blur-xl flex flex-col items-center justify-center transition-all duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} z-40`}>
                     <ul className='flex flex-col items-center gap-8 text-lg'>
-                        <li className='hover:text-blue-400 text-zinc-200 transition-colors cursor-pointer font-bold uppercase tracking-widest' onClick={toggleMenu}>
+                        <li className='hover:text-blue-600 text-zinc-800 transition-colors cursor-pointer font-bold uppercase tracking-widest' onClick={toggleMenu}>
                             <a href="#hj">Home</a>
                         </li>
-                        <li className='hover:text-blue-400 text-zinc-200 transition-colors cursor-pointer font-bold uppercase tracking-widest' onClick={toggleMenu}>
+                        <li className='hover:text-blue-600 text-zinc-800 transition-colors cursor-pointer font-bold uppercase tracking-widest' onClick={toggleMenu}>
                             <a href="#about">About Me</a>
                         </li>
-                        <li className='hover:text-blue-400 text-zinc-200 transition-colors cursor-pointer font-bold uppercase tracking-widest' onClick={toggleMenu}>
+                        <li className='hover:text-blue-600 text-zinc-800 transition-colors cursor-pointer font-bold uppercase tracking-widest' onClick={toggleMenu}>
                             <a href="#slider">Projects</a>
                         </li>
                         <li className='mt-4' onClick={toggleMenu}>

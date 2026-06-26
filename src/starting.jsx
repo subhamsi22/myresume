@@ -123,7 +123,7 @@ export default function Starting() {
     }, [])
 
     return (
-        <div id="hj" ref={containerRef} className='overflow-hidden relative min-h-screen bg-zinc-950 flex flex-col justify-center radial-grid pt-24 md:pt-28 pb-16'>
+        <div id="hj" ref={containerRef} className='overflow-hidden relative min-h-screen bg-slate-50 flex flex-col justify-center radial-grid pt-24 md:pt-28 pb-16'>
             {/* Custom Interactive Follower */}
             <span 
                 id="move" 

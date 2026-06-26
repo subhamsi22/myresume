@@ -9,9 +9,9 @@ export default function Git() {
         a.click()
     }
     return (
-        <div className='flex justify-between items-center py-6 w-full border-b border-zinc-900 select-none'>
+        <div className='flex justify-between items-center py-6 w-full border-b border-zinc-200 select-none'>
             <h1 
-                className='capitalize text-3xl md:text-4xl font-display font-black text-white bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-400'
+                className='capitalize text-3xl md:text-4xl font-display font-black text-zinc-900 bg-clip-text text-transparent bg-gradient-to-r from-zinc-900 to-zinc-500'
             >
                 About Me
             </h1>

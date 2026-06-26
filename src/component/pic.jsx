@@ -58,12 +58,11 @@ export default function Pic() {
         <div className='w-full flex justify-center items-center relative z-10 px-6 mt-8 md:mt-12 font-sans'>
             <div className='w-full max-w-5xl flex flex-col md:flex-row justify-center md:justify-between items-center gap-10 md:gap-8'>
                 
-                {/* Left Text */}
                 <div className='flex-1 text-center md:text-left order-2 md:order-1'>
-                    <h2 className='capitalize text-lg md:text-xl font-medium text-zinc-400 tracking-wider mb-2 font-display'>
+                    <h2 className='capitalize text-lg md:text-xl font-medium text-zinc-600 tracking-wider mb-2 font-display'>
                         Got a vision?
                     </h2>
-                    <h1 className='capitalize text-2xl md:text-3xl font-black text-white leading-snug tracking-tight font-display'>
+                    <h1 className='capitalize text-2xl md:text-3xl font-black text-zinc-900 leading-snug tracking-tight font-display'>
                         {nme}
                     </h1>
                 </div>
@@ -80,7 +79,7 @@ export default function Pic() {
                     <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 via-purple-500 to-cyan-400 rounded-3xl opacity-80 blur-[2px] animate-spin" style={{ animationDuration: '8s' }}></div>
                     
                     {/* Card Body */}
-                    <div className="w-full h-full bg-zinc-900 rounded-3xl overflow-hidden flex items-center justify-center relative z-10 border border-zinc-800">
+                    <div className="w-full h-full bg-white rounded-3xl overflow-hidden flex items-center justify-center relative z-10 border border-zinc-200">
                         <img
                             ref={imgRef}
                             src={h}

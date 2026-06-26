@@ -129,16 +129,16 @@ export default function Slider() {
     }, [currentIndex, isHovered]);
 
     return (
-        <div id='slider' className='w-full py-20 bg-zinc-950/40 relative font-sans flex flex-col justify-center items-center'>
+        <div id='slider' className='w-full py-20 bg-slate-50 relative font-sans flex flex-col justify-center items-center'>
             {/* Header */}
             <div className="text-center mb-12 px-4 select-none">
                 <span className="text-xs font-bold tracking-widest text-blue-500 uppercase px-3 py-1 bg-blue-500/10 rounded-full border border-blue-500/20">
                     Portfolio
                 </span>
-                <h2 className="text-3xl md:text-5xl font-black text-white mt-4 tracking-tight font-display bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-400">
+                <h2 className="text-3xl md:text-5xl font-black text-zinc-900 mt-4 tracking-tight font-display bg-clip-text text-transparent bg-gradient-to-r from-zinc-900 to-zinc-500">
                     Featured Projects
                 </h2>
-                <p className="text-zinc-400 max-w-lg mx-auto mt-2 text-sm md:text-base">
+                <p className="text-zinc-600 max-w-lg mx-auto mt-2 text-sm md:text-base">
                     A curated selection of solutions, applications, and experiments.
                 </p>
             </div>
@@ -152,7 +152,7 @@ export default function Slider() {
                 {/* Prev Button */}
                 <button
                     onClick={prevSlide}
-                    className='absolute left-1 md:left-2 z-20 p-3 rounded-full glass hover:bg-zinc-800/80 text-white transition-all opacity-0 group-hover:opacity-100 hover:scale-110 shadow-lg cursor-pointer duration-300'
+                    className='absolute left-1 md:left-2 z-20 p-3 rounded-full bg-white hover:bg-zinc-100 border border-zinc-200 text-zinc-800 transition-all opacity-0 group-hover:opacity-100 hover:scale-110 shadow-lg cursor-pointer duration-300'
                     aria-label="Previous project"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
@@ -161,7 +161,7 @@ export default function Slider() {
                 </button>
 
                 {/* Slides Box */}
-                <div className="overflow-hidden w-full relative h-[500px] md:h-[450px] rounded-[32px] glass shadow-2xl border border-zinc-800/50">
+                <div className="overflow-hidden w-full relative h-[500px] md:h-[450px] rounded-[32px] bg-white shadow-xl border border-zinc-200">
                     <div
                         className="flex h-full transition-transform duration-700 cubic-bezier(0.16, 1, 0.3, 1)"
                         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -178,20 +178,20 @@ export default function Slider() {
 
                                 {/* Left Side: Text Details */}
                                 <div className="relative z-10 w-full md:w-1/2 flex flex-col items-start text-left order-2 md:order-1 mt-6 md:mt-0 pr-0 md:pr-8 select-none">
-                                    <span className="inline-block py-1 px-3.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[10px] font-bold tracking-widest uppercase mb-4 backdrop-blur-md">
+                                    <span className="inline-block py-1 px-3.5 rounded-full bg-zinc-900/5 border border-zinc-900/10 text-zinc-700 text-[10px] font-bold tracking-widest uppercase mb-4 backdrop-blur-md">
                                         Project 0{index + 1}
                                     </span>
-                                    <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-4 tracking-tight font-display">
+                                    <h3 className="text-2xl md:text-4xl font-extrabold text-zinc-900 mb-4 tracking-tight font-display">
                                         {slide.title}
                                     </h3>
-                                    <p className="text-xs md:text-sm text-zinc-400 leading-relaxed mb-6 max-w-md font-sans">
+                                    <p className="text-xs md:text-sm text-zinc-600 leading-relaxed mb-6 max-w-md font-sans">
                                         {slide.description}
                                     </p>
 
                                     {/* Tech Stack Chips */}
                                     <div className="flex flex-wrap gap-2 mb-6">
                                         {slide.tags.map((tag, i) => (
-                                            <span key={i} className="text-[10px] md:text-xs font-semibold px-2.5 py-1 bg-zinc-900/60 border border-zinc-800 rounded-lg text-zinc-300 font-sans">
+                                            <span key={i} className="text-[10px] md:text-xs font-semibold px-2.5 py-1 bg-white border border-zinc-200 rounded-lg text-zinc-700 font-sans shadow-sm">
                                                 {tag}
                                             </span>
                                         ))}
@@ -201,7 +201,7 @@ export default function Slider() {
                                         href={slide.link}
                                         target={slide.link !== "#" ? "_blank" : undefined}
                                         rel="noreferrer"
-                                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zinc-950 font-bold hover:bg-zinc-200 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 font-display text-xs uppercase tracking-wider"
+                                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900 text-white font-bold hover:bg-zinc-800 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 font-display text-xs uppercase tracking-wider"
                                     >
                                         <span>View Project</span>
                                         <FaExternalLinkAlt className="text-[10px]" />
@@ -212,7 +212,7 @@ export default function Slider() {
                                 <div className="relative z-10 w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center order-1 md:order-2">
                                     {slide.image ? (
                                         /* Sleek screenshot container with skew overlay */
-                                        <div className="w-full max-w-[420px] rounded-2xl overflow-hidden shadow-2xl border border-zinc-800/85 bg-zinc-950/50 p-2 hover:scale-[1.02] duration-300">
+                                        <div className="w-full max-w-[420px] rounded-2xl overflow-hidden shadow-2xl border border-zinc-200 bg-white/50 p-2 hover:scale-[1.02] duration-300">
                                             <img
                                                 src={slide.image}
                                                 alt={slide.title}
@@ -221,8 +221,8 @@ export default function Slider() {
                                         </div>
                                     ) : (
                                         /* Creative abstract vector frame for missing screenshots */
-                                        <div className="w-56 h-56 md:w-64 md:h-64 rounded-3xl glass-light border border-zinc-800/80 flex flex-col items-center justify-center p-6 relative group/card hover:scale-105 duration-300">
-                                            <div className="p-5 rounded-2xl bg-zinc-950/60 border border-zinc-800 flex items-center justify-center shadow-lg mb-4">
+                                        <div className="w-56 h-56 md:w-64 md:h-64 rounded-3xl bg-zinc-50 border border-zinc-200 flex flex-col items-center justify-center p-6 relative group/card hover:scale-105 duration-300">
+                                            <div className="p-5 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center shadow-lg mb-4">
                                                 {slide.icon}
                                             </div>
                                             <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">
@@ -239,7 +239,7 @@ export default function Slider() {
                 {/* Next Button */}
                 <button
                     onClick={nextSlide}
-                    className='absolute right-1 md:right-2 z-20 p-3 rounded-full glass hover:bg-zinc-800/80 text-white transition-all opacity-0 group-hover:opacity-100 hover:scale-110 shadow-lg cursor-pointer duration-300'
+                    className='absolute right-1 md:right-2 z-20 p-3 rounded-full bg-white hover:bg-zinc-100 border border-zinc-200 text-zinc-800 transition-all opacity-0 group-hover:opacity-100 hover:scale-110 shadow-lg cursor-pointer duration-300'
                     aria-label="Next project"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
@@ -256,7 +256,7 @@ export default function Slider() {
                         onClick={() => setCurrentIndex(index)}
                         className={`transition-all duration-300 rounded-full cursor-pointer ${currentIndex === index
                             ? 'w-8 h-2 bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.6)]'
-                            : 'w-2 h-2 bg-zinc-700 hover:bg-zinc-500'
+                            : 'w-2 h-2 bg-zinc-300 hover:bg-zinc-400'
                             }`}
                         aria-label={`Go to slide ${index + 1}`}
                     />
