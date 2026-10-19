@@ -5,7 +5,7 @@ import pixels from "../pics/pixels.png"
 import karopitch from "../pics/karopitch.png"
 import seotool from "../pics/seotool.png"
 import gst from "../pics/gst.png"
-import lead from "../pics/lead.jpg"
+import lead from "../pics/lead.png"
 import { FaExternalLinkAlt, FaCode, FaServer, FaDatabase, FaVideo, FaCalculator, FaShoppingBag, FaSearch, FaRocket, FaShieldAlt } from 'react-icons/fa';
 
 const slideData = [
