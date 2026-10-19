@@ -5,6 +5,7 @@ import pixels from "../pics/pixels.png"
 import karopitch from "../pics/karopitch.png"
 import seotool from "../pics/seotool.png"
 import gst from "../pics/gst.png"
+import lead from "../pics/lead.jpg"
 import { FaExternalLinkAlt, FaCode, FaServer, FaDatabase, FaVideo, FaCalculator, FaShoppingBag, FaSearch, FaRocket, FaShieldAlt } from 'react-icons/fa';
 
 const slideData = [
@@ -18,6 +19,7 @@ const slideData = [
         gradient: "from-blue-500/20 to-sky-500/20",
         icon: <FaShieldAlt className="text-blue-400 text-6xl" />
     },
+    
     {
         id: 2,
         title: "Karo Pitch",
@@ -100,6 +102,16 @@ const slideData = [
         description: "This GST Calculator helps users quickly calculate GST-inclusive and GST-exclusive prices. I have personally used similar calculators while creating invoices and estimating project costs for clients.",
         image: gst,
         link: "https://gst-calculator-psi.vercel.app/",
+        tags: ["JavaScript", "HTML", "CSS"],
+        gradient: "from-amber-500/20 to-orange-500/20",
+        icon: <FaRocket className="text-amber-400 text-6xl" />
+    },
+     {
+        id: 12,
+        title: "Lead Walah",
+        description: "LeadWalah is a software-as-a-service (SaaS) platform that provides web data extraction and lead research tools to help businesses, sales professionals, and marketers discover and organize publicly available business information. We offer subscription-based access to our software, with license-key authentication for registered customers.",
+        image: lead,
+        link: "https://leadwalah-ten.vercel.app/",
         tags: ["JavaScript", "HTML", "CSS"],
         gradient: "from-amber-500/20 to-orange-500/20",
         icon: <FaRocket className="text-amber-400 text-6xl" />
